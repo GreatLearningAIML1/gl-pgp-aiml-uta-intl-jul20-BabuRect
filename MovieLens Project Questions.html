@@ -13105,7 +13105,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Git hub link: https://github.com/GreatLearningAIML1/gl-pgp-aiml-uta-intl-jul20-BabuRect</span>
@@ -13213,7 +13213,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># describe rating</span>
@@ -13230,7 +13230,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -13329,11 +13329,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Movie info describe</span>
-<span class="n">df_MovieInfo</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<span class="n">df_MovieInfo</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13346,7 +13346,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13370,6 +13370,8 @@ div#notebook {
     <tr style="text-align: right;">
       <th></th>
       <th>movie id</th>
+      <th>movie title</th>
+      <th>release date</th>
       <th>unknown</th>
       <th>Action</th>
       <th>Adventure</th>
@@ -13377,8 +13379,7 @@ div#notebook {
       <th>Childrens</th>
       <th>Comedy</th>
       <th>Crime</th>
-      <th>Documentary</th>
-      <th>Drama</th>
+      <th>...</th>
       <th>Fantasy</th>
       <th>Film-Noir</th>
       <th>Horror</th>
@@ -13393,191 +13394,368 @@ div#notebook {
   </thead>
   <tbody>
     <tr>
-      <th>count</th>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
-      <td>1681.000000</td>
+      <th>0</th>
+      <td>1</td>
+      <td>Toy Story</td>
+      <td>01-Jan-1995</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>mean</th>
-      <td>841.841761</td>
-      <td>0.000595</td>
-      <td>0.149316</td>
-      <td>0.080309</td>
-      <td>0.024985</td>
-      <td>0.072576</td>
-      <td>0.300416</td>
-      <td>0.064842</td>
-      <td>0.029744</td>
-      <td>0.431291</td>
-      <td>0.013087</td>
-      <td>0.014277</td>
-      <td>0.054729</td>
-      <td>0.033314</td>
-      <td>0.036288</td>
-      <td>0.146936</td>
-      <td>0.060083</td>
-      <td>0.149316</td>
-      <td>0.042237</td>
-      <td>0.016062</td>
+      <th>1</th>
+      <td>2</td>
+      <td>GoldenEye</td>
+      <td>01-Jan-1995</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>std</th>
-      <td>485.638077</td>
-      <td>0.024390</td>
-      <td>0.356506</td>
-      <td>0.271852</td>
-      <td>0.156126</td>
-      <td>0.259516</td>
-      <td>0.458576</td>
-      <td>0.246321</td>
-      <td>0.169931</td>
-      <td>0.495404</td>
-      <td>0.113683</td>
-      <td>0.118667</td>
-      <td>0.227519</td>
-      <td>0.179507</td>
-      <td>0.187061</td>
-      <td>0.354148</td>
-      <td>0.237712</td>
-      <td>0.356506</td>
-      <td>0.201189</td>
-      <td>0.125751</td>
+      <th>2</th>
+      <td>3</td>
+      <td>Four Rooms</td>
+      <td>01-Jan-1995</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>min</th>
-      <td>1.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
+      <th>3</th>
+      <td>4</td>
+      <td>Get Shorty</td>
+      <td>01-Jan-1995</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>25%</th>
-      <td>422.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
+      <th>4</th>
+      <td>5</td>
+      <td>Copycat</td>
+      <td>01-Jan-1995</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>50%</th>
-      <td>842.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
+      <th>5</th>
+      <td>6</td>
+      <td>Shanghai Triad (Yao a yao yao dao waipo qiao)</td>
+      <td>01-Jan-1995</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>75%</th>
-      <td>1262.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>1.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
+      <th>6</th>
+      <td>7</td>
+      <td>Twelve Monkeys</td>
+      <td>01-Jan-1995</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
     <tr>
-      <th>max</th>
-      <td>1682.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
+      <th>7</th>
+      <td>8</td>
+      <td>Babe</td>
+      <td>01-Jan-1995</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>9</td>
+      <td>Dead Man Walking</td>
+      <td>01-Jan-1995</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>10</td>
+      <td>Richard III</td>
+      <td>22-Jan-1996</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>11</td>
+      <td>Seven (Se7en)</td>
+      <td>01-Jan-1995</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>12</td>
+      <td>Usual Suspects, The</td>
+      <td>14-Aug-1995</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>13</td>
+      <td>Mighty Aphrodite</td>
+      <td>30-Oct-1995</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>14</td>
+      <td>Postino, Il</td>
+      <td>01-Jan-1994</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>15</td>
+      <td>Mr. Holland's Opus</td>
+      <td>29-Jan-1996</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>...</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
     </tr>
   </tbody>
 </table>
+<p>15 rows × 22 columns</p>
 </div>
 </div>
 
@@ -13589,7 +13767,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># user data describe</span>
@@ -13606,7 +13784,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[20]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13687,7 +13865,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check for null in each of the data frames</span>
@@ -13773,7 +13951,7 @@ Total number of null values in the audience data =  0
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># use sum on the default axis.As the sum of movies ids/title/release data does not make any </span>
@@ -13833,7 +14011,7 @@ dtype: object
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#hint: use sum on the axis = 1</span>
@@ -13857,7 +14035,7 @@ dtype: object
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[32]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -13892,7 +14070,7 @@ Name: movie title, Length: 849, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find the movie whose genre is unknown and drop it</span>
@@ -13927,7 +14105,7 @@ Name: movie title, Length: 849, dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[37]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -14259,7 +14437,7 @@ Name: movie title, Length: 849, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># HINT: Use distplot for age and countplot for gender,ratings,occupation. Use lineplot or countplot for release year.</span>
@@ -14274,7 +14452,7 @@ Name: movie title, Length: 849, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="s1">&#39;My*cat*is*brown&#39;</span>
@@ -14313,7 +14491,7 @@ Name: movie title, Length: 849, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#your answers here</span>
@@ -14352,7 +14530,7 @@ Name: movie title, Length: 849, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># plot of age. It does not make sense to plot count plot for age rather histogram gives</span>
@@ -14389,7 +14567,7 @@ Name: movie title, Length: 849, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># gender plot. Use the count plot to plot the count of men and women</span>
@@ -14425,7 +14603,7 @@ Name: movie title, Length: 849, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Occupation plot. Count plot to show the count of each occupation</span>
@@ -14465,7 +14643,7 @@ Name: movie title, Length: 849, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[90]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># year plot</span>
@@ -14521,7 +14699,7 @@ Name: movie title, Length: 849, dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Instead of plotting count on each year, better we can have distplot to have bins</span>
@@ -14577,7 +14755,7 @@ Once that is achieved, you can either use multiple bivariate plots or can use th
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[110]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Your answer here</span>
@@ -14590,10 +14768,13 @@ Once that is achieved, you can either use multiple bivariate plots or can use th
 <span class="c1"># Sort the data frame by year as we have the release year in a new column</span>
 <span class="n">dfMovieInfoCopy</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;release year&#39;</span><span class="p">,</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
+<span class="c1"># drop the movie id</span>
+<span class="n">h</span> <span class="o">=</span> <span class="n">dfMovieInfoCopy</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s1">&#39;movie id&#39;</span><span class="p">,</span> <span class="n">axis</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">)</span>
+
 <span class="c1"># # Now groupby release year and get the sum. This will give the count of each genre (column) movie</span>
 <span class="c1"># # for every year. We can plot this as either a line/bar plot</span>
 <span class="n">plot</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
-<span class="n">dfMovieInfoCopy</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;release year&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="mi">10</span><span class="p">));</span>
+<span class="n">h</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;release year&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="mi">10</span><span class="p">));</span>
 </pre></div>
 
     </div>
@@ -14653,7 +14834,7 @@ Once that is achieved, you can either use multiple bivariate plots or can use th
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[114]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#your answer here</span>
@@ -14795,7 +14976,7 @@ Once that is achieved, you can either use multiple bivariate plots or can use th
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[119]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create a dataframe with genre, men and women column to hold % of men and women watching each genre</span>
@@ -14875,7 +15056,7 @@ Once that is achieved, you can either use multiple bivariate plots or can use th
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Conclusion:">Conclusion:<a class="anchor-link" href="#Conclusion:">&#182;</a></h2><h3 id="1.-More-than-40%-of-women-watch-drama-whereas-around-38%-men-watch-drama.">1. More than 40% of women watch drama whereas around 38% men watch drama.<a class="anchor-link" href="#1.-More-than-40%-of-women-watch-drama-whereas-around-38%-men-watch-drama.">&#182;</a></h3><h3 id="2.-Around-14%-of-men-watch-movies-and-10%-of-women-watch-sci-fi-movies">2. Around 14% of men watch movies and 10% of women watch sci-fi movies<a class="anchor-link" href="#2.-Around-14%-of-men-watch-movies-and-10%-of-women-watch-sci-fi-movies">&#182;</a></h3><h3 id="3.-Around-22%-of-women-watch-romantic-movies-and-men-is-less-than-20%">3. Around 22% of women watch romantic movies and men is less than 20%<a class="anchor-link" href="#3.-Around-22%-of-women-watch-romantic-movies-and-men-is-less-than-20%">&#182;</a></h3>
+<h2 id="Conclusion:">Conclusion:<a class="anchor-link" href="#Conclusion:">&#182;</a></h2><h3 id="1.-False.-More-than-40%-of-women-watch-drama-whereas-around-38%-men-watch-drama.">1. False. More than 40% of women watch drama whereas around 38% men watch drama.<a class="anchor-link" href="#1.-False.-More-than-40%-of-women-watch-drama-whereas-around-38%-men-watch-drama.">&#182;</a></h3><h3 id="2.-False.-Around-14%-of-men-watch-movies-and-10%-of-women-watch-sci-fi-movies">2. False. Around 14% of men watch movies and 10% of women watch sci-fi movies<a class="anchor-link" href="#2.-False.-Around-14%-of-men-watch-movies-and-10%-of-women-watch-sci-fi-movies">&#182;</a></h3><h3 id="3.-False.-Around-22%-of-women-watch-romantic-movies-and-men-is-less-than-20%">3. False. Around 22% of women watch romantic movies and men is less than 20%<a class="anchor-link" href="#3.-False.-Around-22%-of-women-watch-romantic-movies-and-men-is-less-than-20%">&#182;</a></h3>
 </div>
 </div>
 </div>
@@ -14893,9 +15074,16 @@ Once that is achieved, you can either use multiple bivariate plots or can use th
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="This-takes-quite-sometime-to-execute!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!">This takes quite sometime to execute!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!<a class="anchor-link" href="#This-takes-quite-sometime-to-execute!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!">&#182;</a></h3>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[152]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#group the movie genre by drame [ 2 groups will be there one with 0 (nondrama), the other with 1(drama)]</span>
@@ -14991,20 +15179,13 @@ Number of women watched drama              =  11008
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Conclusion:-More-number-of-men-watched-drama-than-women">Conclusion: More number of men watched drama than women<a class="anchor-link" href="#Conclusion:-More-number-of-men-watched-drama-than-women">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Getting-count-of-men/women-watching-sci-fi-movie">Getting count of men/women watching sci-fi movie<a class="anchor-link" href="#Getting-count-of-men/women-watching-sci-fi-movie">&#182;</a></h3><h4 id="Method-2:-We-can-do-the-same-way-how-we-got-for-drama.-Lets-try-a-different-way-to-show-the-----possible-ways">Method 2: We can do the same way how we got for drama. Lets try a different way to show the     possible ways<a class="anchor-link" href="#Method-2:-We-can-do-the-same-way-how-we-got-for-drama.-Lets-try-a-different-way-to-show-the-----possible-ways">&#182;</a></h4>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[155]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># create dataframe to hold the results</span>
@@ -15090,13 +15271,13 @@ No: Actually men are watching more sci-fi movie than women
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[155]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x14c6c69bc08&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x261f6c41dc8&gt;</pre>
 </div>
 
 </div>
@@ -15136,7 +15317,7 @@ No: Actually men are watching more sci-fi movie than women
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[159]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># get list of index of the romantic movies</span>
@@ -15170,13 +15351,7 @@ No: Actually men are watching more sci-fi movie than women
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---------------------------------------------------------------------&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of men   watching romantic movies = &quot;</span><span class="p">,</span> <span class="n">menViewersCount</span><span class="p">)</span>        
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of women watching romantic movies = &quot;</span><span class="p">,</span> <span class="n">womenviewersCount</span><span class="p">)</span> 
-
-<span class="k">if</span> <span class="n">menViewersCount</span> <span class="o">&gt;</span> <span class="n">womenviewersCount</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Yes: men are watching more romance movies than women&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;No: women are watching more romance movies than men&quot;</span><span class="p">)</span>
-    
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of women watching romantic movies = &quot;</span><span class="p">,</span> <span class="n">womenviewersCount</span><span class="p">)</span>     
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;---------------------------------------------------------------------&quot;</span><span class="p">)</span>
     
     
@@ -15199,7 +15374,6 @@ No: Actually men are watching more sci-fi movie than women
 <pre>---------------------------------------------------------------------
 Number of men   watching romantic movies =  13603
 Number of women watching romantic movies =  5858
-Yes: men are watching more romance movies than women
 ---------------------------------------------------------------------
 </pre>
 </div>
